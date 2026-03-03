@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pastelería Artesanal de lujo. Los mejores postres y panes horneados diariamente.">
+    <title>Nombre de tu Pastelería | Artesanal & Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo">Pastelería<span>.</span></h1>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Nuestro Menú</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Pedir Ahora</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge fade-up">Artesanal & Exclusivo</span>
+            <h2 class="hero-title fade-up delay-1">El Verdadero Sabor de la <br><span>Excelencia</span></h2>
+            <p class="hero-subtitle fade-up delay-2">Ingredientes premium, recetas de autor y pasión en cada bocado. Descubre nuestra colección de postres elaborados a mano cada día.</p>
+            <div class="hero-buttons fade-up delay-3">
+                <a href="#menu" class="btn-primary large">Ver Menú</a>
+                <a href="#nosotros" class="btn-secondary large">Nuestra Historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (Dynamic Catalog) -->
+    <section id="menu" class="catalog-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Delicias Recién Horneadas</h2>
+                <p>Explora nuestras creaciones más exquisitas, preparadas cuidadosamente por nuestros maestros pasteleros.</p>
+            </div>
+            
+            <div class="catalog-grid" id="catalog-container">
+                <!-- Tarjetas generadas dinámicamente vía JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="logo">Pastelería<span>.</span></h2>
+                <p>Arte dulce en cada creación.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Contacto</h3>
+                <p>📍 Calle Falsa 123, Ciudadela</p>
+                <p>📞 +1 234 567 890</p>
+                <p>✉️ hola@tupasteleria.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Nombre de tu Pastelería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
